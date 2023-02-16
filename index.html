@@ -1,20 +1,38 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Plate Calculator</title>
+    <title>Barbell Weight Calculator</title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
+
   <body>
+
     <div id="container">
-      <h1>Plate Calculator</h1>
-      <p>Enter the total weight:</p>
-      <input id="inputWeight" type="text">
-      <br><br>
+
+      <h1>Barbell Weight Calculator</h1>
+
+      <div id="inputWeight">
+      <input id="inputWeight" type="text" placeholder="Input Weight (kgs)">
+      </div>
+      
+      <div id="checkbox">
+      <input type="checkbox" id="unilateralSwitch">
+      unilateral?
+      </div>
+
+      <div>
       <button id="calculateButton">Calculate</button>
-      <br><br>
+      </div>
+      
       <div id="result"></div>
+
     </div>
+
+    <footer>Made by Leonardo Lima</footer>
+  
     <script src="script.js"></script>
   </body>
-  <footer>Made by Leonardo Lima</footer>
+  
+ 
+
 </html>

@@ -1,28 +1,33 @@
 var button = window.document.querySelector('button#calculateButton')
-
+var checkbox = window.document.querySelector('input#unilateralSwitch')
 
 button.addEventListener('click', mainFunction)
 
+
 function mainFunction() {
-    var totalWeightText = window.document.querySelector('input#inputWeight');
-    var totalWeight = Number(totalWeightText.value)
-    var lateralWeight = (totalWeight / 2)
+    let totalWeightText = window.document.querySelector('input#inputWeight');
+    let totalWeight = Number(totalWeightText.value)
     
-    
+    if (checkbox.checked == false){
+    var mainWeight = (totalWeight / 2)
+    } else {
+    var mainWeight = (totalWeight)
+    }
+
     function calculator(plateWeight) {
-        return Math.floor(lateralWeight / plateWeight)
+        return Math.floor(mainWeight / plateWeight)
     }
 
     var amountTwenty = calculator(20);
-    lateralWeight %= 20
+    mainWeight %= 20
     var amountFifteen = calculator(15);
-    lateralWeight %= 15
+    mainWeight %= 15
     var amountTen = calculator(10);
-    lateralWeight %= 10
+    mainWeight %= 10
     var amountFive = calculator(5);
-    lateralWeight %= 5
+    mainWeight %= 5
     var amountTwoAndAHalf = calculator(2.5);
-    lateralWeight %= 2.5
+    mainWeight %= 2.5
 
     var result = window.document.querySelector('div#result');
     result.innerHTML =
