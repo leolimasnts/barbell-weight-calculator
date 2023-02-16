@@ -23,7 +23,7 @@ body {
     color: #03001C;
   }
   
-  div#buttonsRow {
+  div#checkbox {
     margin: auto;
     padding: 20px;
     justify-content: space-evenly;
