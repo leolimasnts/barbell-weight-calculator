@@ -35,6 +35,5 @@ function mainFunction() {
     15 kg plates: ${amountFifteen}<br>
     10 kg plates: ${amountTen}<br>
     05 kg plates: ${amountFive}<br>
-    2.5 kg plates: ${amountTwoAndAHalf}<br><br>
-    Each side!`;
+    2.5 kg plates: ${amountTwoAndAHalf}`;
 }
