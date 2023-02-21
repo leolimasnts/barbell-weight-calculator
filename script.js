@@ -15,19 +15,16 @@ function mainFunction() {
     }
 
     function calculator(plateWeight) {
-        return Math.floor(mainWeight / plateWeight)
+        let plateAmount = Math.floor(mainWeight / plateWeight)
+        mainWeight %= plateWeight
+        return plateAmount
     }
 
     var amountTwenty = calculator(20);
-    mainWeight %= 20
     var amountFifteen = calculator(15);
-    mainWeight %= 15
     var amountTen = calculator(10);
-    mainWeight %= 10
     var amountFive = calculator(5);
-    mainWeight %= 5
     var amountTwoAndAHalf = calculator(2.5);
-    mainWeight %= 2.5
 
     var result = window.document.querySelector('div#result');
     result.innerHTML =
