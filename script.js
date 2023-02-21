@@ -1,5 +1,5 @@
-var button = window.document.querySelector('button#calculateButton');
-var checkbox = window.document.querySelector('input#unilateralSwitch');
+let button = window.document.querySelector('button#calculateButton');
+let checkbox = window.document.querySelector('input#unilateralSwitch');
 
 button.addEventListener('click', mainFunction);
 
@@ -8,9 +8,9 @@ function mainFunction() {
     let totalWeight = Number(totalWeightText.value);
     
     if (checkbox.checked == false){
-    var mainWeight = (totalWeight / 2);
+    let mainWeight = (totalWeight / 2);
     } else {
-    var mainWeight = (totalWeight);
+    let mainWeight = (totalWeight);
     }
 
     function calculator(plateWeight) {
@@ -19,13 +19,13 @@ function mainFunction() {
         return plateAmount;
     }
 
-    var amountTwenty = calculator(20);
-    var amountFifteen = calculator(15);
-    var amountTen = calculator(10);
-    var amountFive = calculator(5);
-    var amountTwoAndAHalf = calculator(2.5);
+    let amountTwenty = calculator(20);
+    let amountFifteen = calculator(15);
+    let amountTen = calculator(10);
+    let amountFive = calculator(5);
+    let amountTwoAndAHalf = calculator(2.5);
 
-    var result = window.document.querySelector('div#result');
+    let result = window.document.querySelector('div#result');
     result.innerHTML =
     `20 kg plates: ${amountTwenty}<br>
     15 kg plates: ${amountFifteen}<br>
