@@ -6,11 +6,12 @@ button.addEventListener('click', mainFunction);
 function mainFunction() {
     let totalWeightText = window.document.querySelector('input#inputWeight');
     let totalWeight = Number(totalWeightText.value);
-    
+    let mainWeight
+
     if (checkbox.checked == false){
-    let mainWeight = (totalWeight / 2);
+    mainWeight = (totalWeight / 2);
     } else {
-    let mainWeight = (totalWeight);
+    mainWeight = (totalWeight);
     }
 
     function calculator(plateWeight) {
