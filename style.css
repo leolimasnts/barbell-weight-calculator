@@ -7,7 +7,7 @@ body {
     display: grid;
     place-items: center;
   }
-  
+
   header {
     padding: auto;
     margin: auto;
@@ -75,4 +75,3 @@ body {
     margin: 0 auto;
     text-align: center;
   }
-  
