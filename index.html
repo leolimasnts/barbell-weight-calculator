@@ -1,40 +1,44 @@
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Barbell Weight Calculator</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
 
-  <body>
-    
-    <header>
-      <h1>Barbell Weight Calculator</h1>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <title>Barbell Weight Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
-    <main>
-      <div id="container">
-      
-        <div id="inputWeight">
-        <input id="inputWeight" type="text" placeholder="Input Weight (kg)">
-        </div>
-      
-        <div id="checkbox">
-        <input type="checkbox" id="unilateralSwitch">
-        Unilateral
-        <button id="calculateButton">Calculate</button>
-        </div>
-      
-        <div id="result"></div>
+<body>
+
+  <header>
+    <h1>Barbell Weight Calculator</h1>
+  </header>
+
+  <main>
+    <div id="container">
+
+      <div id="input-weight">
+        <input id="input-weight" type="text" placeholder="Input Weight (kg)">
       </div>
-    </main>
 
-    <footer>
-      Made by <a href="https://github.com/leolimasnts" target="_blank" rel="external">Leonardo Lima</a>
-    </footer>
-  
-    <script src="script.js"></script>
-  </body>
-  
- 
+      <div id="buttons">
+
+
+        <label class="form-control">
+          <input type="checkbox" id="unilateral">
+          Unilateral
+        </label>
+
+        <button id="calculate">Calculate</button>
+      </div>
+
+      <div id="result"></div>
+    </div>
+  </main>
+
+  <footer>
+    Made by <a href="https://github.com/leolimasnts" target="_blank" rel="external">Leonardo Lima</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 
 </html>
